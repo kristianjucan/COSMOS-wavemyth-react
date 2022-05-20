@@ -1,0 +1,133 @@
+.Slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 59px;
+}
+
+
+.slideContainer {
+    width: 1057px;
+    height: 400px;
+    
+    
+}
+
+.each-slide > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-size:cover;
+    background-size: 736px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 395.13px;
+    width: 700px;
+  }
+
+  .each-slide {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+  }
+  
+  .each-slide span {
+    padding: 20px;
+    font-size: 20px;
+    background: rgba(45, 51, 61, 1);
+    color: rgba(169, 181, 204, 1);
+    text-align: start;
+    width: 320px;
+    height: 355.13px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+  }
+  .each-slide span h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 29.71px;
+    font-weight: 700;
+  }
+  .each-slide span h4 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30.9px;
+    font-weight: 700;
+  }
+  .each-slide span button {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    
+  }
+
+  .each-slide span p{
+    font-size: small;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    
+  }
+
+  .purchase {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 18rem;
+    background-color: rgba(39, 43, 53, 1);
+    border-radius: 5%;
+    padding: 10px;
+  }
+
+
+  .product-pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .product-pricing p {
+    margin-top: 0px;
+  }
+  .product-pricing h4 {
+    font-size: x-large;
+    margin: 0;
+  }
+
+  .purchase button {
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 10%;
+    background-color: rgba(70, 195, 81, 1);
+    color: white;
+  }
+
+  .purchase button:hover {
+    cursor: pointer;
+    background-color: rgb(61, 167, 70);
+  }
+
+  #product-description {
+    width: 80%;
+  }
+
+  @media(max-width:1100px) {
+    .slideContainer {
+      width: 90%;
+    }
+  }
+
+  @media(max-width:500px) {
+    .slideContainer {
+      width: 90%;
+    }
+    .each-slide > div {
+      display: none;
+    }
+  }

@@ -1,0 +1,155 @@
+.Navigation {
+    background-color: rgba(20, 25, 34, 1);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+}
+
+.navContent {
+    width: 1057px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navContent a {
+    font-size: 15.73px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+
+.Navigation li {
+    list-style-type: none;
+    display: flex;
+    margin-right: 50px;
+    align-items: center;
+}
+
+.Navigation li:hover {
+transform:scale(1.1);
+}
+
+.Navigation li a {
+    list-style-type: none;
+    display: flex;
+    text-decoration: none;
+    color: rgba(169, 181, 204, 1);
+}
+
+.Navigation ul {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+#logo {
+    width: 154px;
+    height: 41px;
+    object-fit: contain;
+    
+    
+}
+
+#icon{
+    width: 22px;
+    height: 22px;
+    margin-right: 5px;
+    
+}
+
+.Cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 20%; */
+}
+
+.Cart p {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#totalItems {
+    color: rgba(169, 181, 204, 1) ;
+}
+
+@media (max-width:1100px) {
+    .navContent {
+        width: 800px;
+    }
+}
+
+
+@media(max-width:820px) {
+    .collapsible{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
+    .collapsible li {
+        margin-right: 0px;
+    }
+.collapsible button {
+    background-color: rgba(45, 51, 61, 1);
+    color: rgba(169, 181, 204, 1);
+    border: 1px solid rgba(169, 181, 204, 1);
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+    .navContent {
+        display: none;
+    }
+    .isClosed {
+        background-color: rgb(255, 255, 255);
+        width: 0px;
+        height: 0px;
+        display: none;
+      }
+    
+      .isOpen {
+        background-color: rgba(20, 25, 34, 1);
+        width: 150px;
+        position: absolute;
+        top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px;
+        z-index: 1;
+      }
+
+      .isOpen ul {
+          height: 100px;
+          
+      }
+      .Navigation ul {
+          height: 100px;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    #logo {
+        width: 100px;
+        
+    }
+}
+
+@media (min-width: 821px) {
+    .collapsible {
+      display: none;
+    }
+  }
+

@@ -1,0 +1,77 @@
+.Package {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    
+    
+    
+}
+
+.Package-Content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 1057px;
+}
+
+.Package-Title h2 {
+    border-bottom: 1px solid rgba(58, 66, 78, 1);
+    width: 529px;
+    color: rgba(169, 181, 204, 1);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.Package-Description {
+    width: 699px;
+    color: rgba(169, 181, 204, 1);
+}
+
+.Package-Description p {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+
+
+
+#checkout-button {
+    padding: 5px 15px 5px 15px;
+    background-color: rgba(70, 195, 81, 1) ;
+    border-radius: 8%;
+    border: 1px solid grey;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Ubuntu', sans-serif;
+    width: 111px;
+    height: 32px;
+    margin-top: 20px;
+}
+
+#checkout-button:hover {
+    cursor: pointer;
+    background-color: rgb(61, 167, 70);
+  }
+
+@media(max-width: 1150px) {
+    .Package-Content {
+        display: flex;
+        align-items: center;
+        
+        }
+        .Package-Description {
+            width: 500px;
+        }
+        .Package-Title h2 {
+            width: 200px;
+        }
+     
+}
+
+@media(max-width: 500px) {
+    .Package-Description {
+        width: 300px;
+    }
+}
